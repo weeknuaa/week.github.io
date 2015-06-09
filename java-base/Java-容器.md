@@ -59,10 +59,8 @@
         list.add("third");  
         ListIterator it=list.listIterator (list.size());  
         while(it.hasPrevious()){  
-        	System.out.println(it.previous());  
-	}
-	
- 
+        	System.out.println(it.previous());
+		}
 
 ## 最后看看各个类和接口的关系： ##
 ![](http://images.cnitblog.com/blog/413416/201304/15203418-c01e434f91fb482b902463bcacbf3f69.png)
