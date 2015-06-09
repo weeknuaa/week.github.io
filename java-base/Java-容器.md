@@ -46,5 +46,22 @@
     		}
     	}   
 
+- ListIterator
+	- ListIterator是Iterator的子类接口，只能用于各种List类的访问。Iterator只能单向向前移动，但是ListIterator可以双向移动。
+	- 逆向访问
+		- 逆向访问用到的两个方法：hasPrevious()、previous()。
+		- 注：逆向访问时，初始化ListIterator实例时，要提供一个list.size()参数，这样才能总尾部开始迭代。
+- sample code
+
+        List<String> list=new ArrayList<String>();  
+        list.add("first");  
+        list.add("second");  
+        list.add("third");  
+        ListIterator it=list.listIterator (list.size());  
+        while(it.hasPrevious()){  
+        	System.out.println(it.previous());  
+	}
+ 
+
 ## 最后看看各个类和接口的关系： ##
 ![](http://images.cnitblog.com/blog/413416/201304/15203418-c01e434f91fb482b902463bcacbf3f69.png)
